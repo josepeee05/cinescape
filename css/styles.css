@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DEFINIMOS VARABLES DE MARCA */
+:root{
+    --color-primario: #6644B8;
+    --color-secundario: #BB00BD;
+    --color-fondoA: #221039;
+    --color-fondoB: #37274B;
+}
+
+/* ESTILOS PÁGINA DE INICIO */
+
+#cont-inicio{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url("../img/home-img.png") var(--color-fondoA);
+    /* background-size: cover; Por ahora dejarlo */
+    text-align: center;
+    padding-top: 415px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#cont-inicio p{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+.btn-principal{
+    padding: 14px 40px;
+    background: var(--color-primario);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    max-width: 90%;
+    margin: 70px auto 10px;
+    text-decoration: none;
+}
+
+.btn-secundario{
+    padding: 14px 40px;
+    background: var(--color-secundario);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    max-width: 90%;
+    margin: 20px auto;
+    text-decoration: none;
+}
+
+/* ESTILOS REGISTRO */
+
+#cont-registro{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url("../img/register-img.png") var(--color-fondoA);
+    /* background-size: cover; Por ahora dejarlo */
+    text-align: center;
+    padding-top: 200px;
+    font-family: "Montserrat", sans-serif;
+}
+
+#cont-registro p{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+#cont-registro form{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#cont-registro form input{
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+
+/* ESTILOS HOME */
+
+#cont-home{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: var(--color-fondoA);
+    position: relative;
+}
+
+#cont-home .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+#cont-home .header img{
+    width: 50px;
+}
+
+
+#cont-home .header a:nth-child(3) img{
+    border-radius: 50%;
+}
+
+
+#cont-home .filtros{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background: var(--color-fondoB);
+    border: 2px solid var(--color-primario);
+    border-radius: 12px;
+}
+
+#cont-home .filtros button{
+    background: transparent;
+    padding: 12px 10px;
+    width: 33.3%;
+    border-radius: 8px;
+    border-color: transparent;
+    color: #fff;
+}
+
+#cont-home .filtros button.active{
+    background: var(--color-primario);
+    font-weight: 600;
+}
+
+#copy-category{
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+#cont-aventuras{
+    width: 90%;
+    margin: 0 auto;
+}
+
+#cont-aventuras h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#cont-aventuras hr{
+    width: 200px;
+    height: 2px;
+    border: 2px solid var(--color-primario);
+    margin: 4px 0 20px;
+}
+
+.cont-caratulas{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.caratulas{
+    background: #fff;
+    border: transparent;
+    border-radius: 20px 0 30px 0;
+    width: 170px;
+    padding: 2px;
+    margin: 0 10px 0 0;
+    display: inline;
+}
+
+.caratulas img{
+    width: 150px;
+    height: 99%;
+    border-radius: 20px 0 20px 0;
+}
+
+
+
+#modal-pelicula{
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    display: none;
+}
+
+#modal-pelicula.active{
+    display: block;
+}
+
+#modal-pelicula button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: #fff;
+}
+
+#modal-pelicula .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    border-bottom: 4px solid var(--color-primario);
+    display: inline-block;
+}
+
+#modal-pelicula p{
+    color: #fff;
+    margin: 6px 0;
+    font-size: 18px;
+}
+
+#panel-lateral{
+    width: 330px;
+    height: 100%;
+    position: absolute;
+    left: -850px;
+    top: 0;
+    z-index: 9;
+    background: var(--color-fondoA);
+    transition: 1.3s;
+    padding: 30px 0 0 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    border-right: 3px solid var(--color-primario);
+    border-left: 3px solid var(--color-primario);
+}
+
+#panel-lateral.active{
+    left: 0;
+}
+
+#panel-lateral h4{
+    color: #fff;
+    margin-top: 70px;
+}
+
+#panel-lateral hr{
+    width: 105px;
+    height: 1px;
+    border: 1px solid var(--color-primario);
+    margin-bottom: 150px;
+}
+
+#panel-lateral ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#panel-lateral li{
+    list-style: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#panel-lateral img{
+    position: absolute;
+    width: 50px;
+    margin-bottom: 30px;
+    right: -25px;
+}
+
+#panel-lateral .sesion{
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 100px;
+}

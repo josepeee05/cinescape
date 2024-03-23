@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINESCAPE</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="cont-home">
+        <div class="header">
+            <a href="#" onclick="panel_lateral()"><img src= "img/menu.png" alt="Icon menu"></a>
+            <a href="index.html"><img  src= "img/icon-logo.png" alt="Icon Logo"></a>
+            <a href="#"><img  src= "img/user.png" alt="Icon User"></a>
+        </div>
+
+        <div class="filtros">
+            <button class="active">Aventuras</button>
+            <button>Animadas</button>
+            <button>Drama</button>
+        </div>
+
+        <p id="copy-category">
+            Descubre emocionantes peliculas de aventura llenas de accion, peligro y exoticos lugares 
+        </p>
+
+        <div id="cont-aventuras">
+            <h2>Estrenos</h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratulas" onclick="abrir_modal()">
+                    <img src="img/guardianes3.jpg" alt="Guardianes de la galaxia">
+                </button>
+                <button class="caratulas" onclick="abrir_modal()">
+                    <img src="img/mariobros.jpg" alt="Guardianes de la galaxia">
+                </button>
+                <button class="caratulas" onclick="abrir_modal()">
+                    <img src="img/flash.jpg" alt="Guardianes de la galaxia">
+                </button>
+                <button class="caratulas" onclick="abrir_modal()">
+                    <img src="img/barbie.jpeg" alt="Guardianes de la galaxia">
+                </button>
+            </div>
+        </div>
+
+        <div id="cont-aventuras">
+            <h2>Proximamente</h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratulas" onclick="abrir_modal()">
+                    <img src="img/flash.jpg" alt="Guardianes de la galaxia">
+                </button>
+                <button class="caratulas" onclick="abrir_modal()">
+                    <img src="img/megalodon.jpg" alt="Guardianes de la galaxia">
+                </button>
+                <button class="caratulas" onclick="abrir_modal()">
+                    <img src="img/shazam2.jpg" alt="Guardianes de la galaxia">
+                </button>
+                <button class="caratulas" onclick="abrir_modal()">
+                    <img src="img/oppenheimer_drama.jpg" alt="Guardianes de la galaxia">
+                </button>
+            </div>
+
+            <div id="modal-pelicula" class="">
+                <button onclick="cerrar_modal()">X</button>
+                <img src="img/mariobros.jpg" alt="Mario Bros" class="caratula-img">
+                <img src="img/boton_play1.png" alt="Play" class="btn-play">
+                <h2>Super Mario<br> 
+                    Bros. La pelicula
+                </h2>
+                <p>Estreno: 06-abril-2023</p>
+                <p>Accion, Comedia</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae necessitatibus consectetur harum quia exercitationem beatae architecto animi, illum consequuntur deserunt neque unde iste eveniet, ut dolorum voluptates? Assumenda soluta, dolorum cupiditate quas, ullam praesentium dignissimos quis necessitatibus nam, porro illo optio commodi. Dicta fuga aspernatur minus, nihil eaque tenetur.
+                </p>
+            </div>
+
+            <div id="panel-lateral">
+                <a href="#" onclick="panel_lateral()"><img src= "img/menu.png" alt="Icon menu"></a>
+                <h4 href="#">Editar Mi cuenta</h4>
+                <hr>
+                <ul>
+                    <li><a href="#">-Home</a></li>
+                    <li><a href="#">-Aventuras</a></li>
+                    <li><a href="#">-Animadas</a></li>
+                    <li><a href="#">-Drama</a></li>
+                    <li><a href="#">-Comedia</a></li>
+                    <li><a href="#">-Ficcion</a></li>
+                    <li><a href="#">-Nacionales</a></li>
+                </ul>
+                <a href="#" class="sesion">Cerrar Sesión</a>
+            </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
